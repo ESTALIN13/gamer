@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMER FEST ESPE 2027</title>
+
+    <!-- Bootstrap 5.3 Local -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ESTILOS PASTELES (Celestes y Rosados combinados, en un solo archivo) -->
+    <style>
+        :root {
+            --pastel-pink: #f8bbd0;
+            --pastel-blue: #b3e5fc;
+            --pastel-bg: #f4f8fb;        /* Fondo general azul/gris muy suave */
+            --pastel-card: #ffffff;
+            --pastel-text: #374151;
+        }
+
+        body {
+            background-color: var(--pastel-bg);
+            color: var(--pastel-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Evita que el menú fijo tape los títulos de las secciones al navegar */
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        /* Navbar elegante en tonos pasteles */
+        .navbar-custom {
+            background-color: #ffffff !important;
+            border-bottom: 2px solid var(--pastel-blue);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .navbar-custom .nav-link {
+            color: #4b5563 !important;
+            font-weight: 600;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #0284c7 !important;
+        }
+
+        /* Tarjetas con bordes suaves y sombras delicadas */
+        .card-custom {
+            border: 1px solid #e0f2fe;
+            border-radius: 1rem;
+            background-color: var(--pastel-card);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(179, 229, 252, 0.3);
+        }
+
+        /* Botones personalizados celeste pastel */
+        .btn-pastel {
+            background-color: #0ea5e9;
+            color: white;
+            font-weight: 600;
+            border-radius: 50rem;
+            padding: 0.6rem 1.8rem;
+            border: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-pastel:hover {
+            background-color: #0284c7;
+            color: white;
+        }
+
+        /* Footer suave combinando rosado y celeste */
+        footer {
+            background-color: #fce7f3;
+            color: #831843;
+            border-top: 1px solid #fbcfe8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4 text-dark" href="#inicio">
+                    🎮 <span style="color: #0284c7;">GAMER FEST</span> ESPE 2027
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#premios">Premios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#auspiciantes">Auspiciantes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-pastel btn-sm shadow-sm" href="#inscripcion">Inscríbete</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PRESENTACIÓN / HERO -->
+        <section id="inicio" class="py-5">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6">
+                        <span class="badge mb-3 px-3 py-2 rounded-pill" style="background-color: #e0f2fe; color: #0369a1; font-weight: 600;">
+                            ✨ EVENTO UNIVERSITARIO 2027
+                        </span>
+
+                        <h1 class="display-5 fw-bold text-dark mb-3">
+                            ¡La competencia gamer llega a la ESPE!
+                        </h1>
+
+                        <p class="lead text-secondary mb-4">
+                            Un encuentro para compartir, competir y disfrutar de la cultura gamer junto a la comunidad universitaria.
+                        </p>
+
+                        <div class="card card-custom mb-4 border-start border-4" style="border-color: #0284c7 !important;">
+                            <div class="card-body py-3">
+                                <p class="mb-2"><strong>📅 Fecha:</strong> 15 de mayo de 2027</p>
+                                <p class="mb-2"><strong>🕘 Horario:</strong> 09:00 a 17:00</p>
+                                <p class="mb-0"><strong>📍 Lugar:</strong> Campus Belisario Quevedo de la ESPE</p>
+                            </div>
+                        </div>
+
+                        <a href="#inscripcion" class="btn btn-pastel btn-lg shadow-sm">
+                            Inscríbete ahora
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="imagenes/banner.jpg" class="img-fluid rounded-4 shadow-sm border bg-white p-2"
+                            alt="Banner Gamer Fest ESPE 2027">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <section id="categorias" class="py-5 bg-white border-top border-bottom">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6 text-dark">Categorías de Competencia</h2>
+                    <p class="text-secondary">¡Elige tu categoría y demuestra tus habilidades en la cancha digital!</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Categoría 1: Fútbol Virtual -->
+                    <div class="col">
+                        <div class="card card-custom h-100">
+                            <img src="imagenes/futbol.jpg" class="card-img-top rounded-top-4" alt="Fútbol Virtual" style="height: 160px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge mb-2" style="background-color: #fbcfe8; color: #831843;">Individual</span>
+                                <h3 class="card-title h5 fw-bold">Fútbol Virtual</h3>
+                                <p class="card-text text-secondary small">
+                                    Compite en partidos individuales de simulador deportivo y demuestra tu estrategia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 2: Free Fire -->
+                    <div class="col">
+                        <div class="card card-custom h-100">
+                            <img src="imagenes/freefire.jpg" class="card-img-top rounded-top-4" alt="Free Fire" style="height: 160px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge mb-2" style="background-color: #e0f2fe; color: #0369a1;">Por Equipos</span>
+                                <h3 class="card-title h5 fw-bold">Free Fire</h3>
+                                <p class="card-text text-secondary small">
+                                    Sobrevive en intensas batallas campales y lleva a tu escuadra hacia la victoria total.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 3: Fortnite -->
+                    <div class="col">
+                        <div class="card card-custom h-100">
+                            <img src="imagenes/fortnite.jpg" class="card-img-top rounded-top-4" alt="Fortnite" style="height: 160px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge mb-2" style="background-color: #fbcfe8; color: #831843;">Individual / Dúos</span>
+                                <h3 class="card-title h5 fw-bold">Fortnite</h3>
+                                <p class="card-text text-secondary small">
+                                    Construcción, puntería y estrategia en el Battle Royale más dinámico del campus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 4: DBZ Budokai Tenkaichi 3 -->
+                    <div class="col">
+                        <div class="card card-custom h-100">
+                            <img src="imagenes/dbz.jpg" class="card-img-top rounded-top-4" alt="DBZ Budokai Tenkaichi 3" style="height: 160px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge mb-2" style="background-color: #fbcfe8; color: #831843;">Individual</span>
+                                <h3 class="card-title h5 fw-bold">DBZ Budokai Tenkaichi 3</h3>
+                                <p class="card-text text-secondary small">
+                                    Combates legendarios 1v1 con los mejores guerreros Z para definir al más fuerte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIOS -->
+        <section id="premios" class="py-5">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6 text-dark">Premios Propuestos</h2>
+                    <p class="text-secondary">Recompensas demostrativas para los mejores clasificados del torneo.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center border-2" style="border-color: #fde047 !important;">
+                            <div class="card-body py-4">
+                                <div class="display-4 mb-2">🥇</div>
+                                <h3 class="card-title h4 fw-bold">Primer Lugar</h3>
+                                <p class="card-text text-secondary">Trofeo oficial, medalla de oro y premio tecnológico.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center border-2" style="border-color: #cbd5e1 !important;">
+                            <div class="card-body py-4">
+                                <div class="display-4 mb-2">🥈</div>
+                                <h3 class="card-title h4 fw-bold">Segundo Lugar</h3>
+                                <p class="card-text text-secondary">Medalla de plata y kit gamer para periféricos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center border-2" style="border-color: #fdba74 !important;">
+                            <div class="card-body py-4">
+                                <div class="display-4 mb-2">🥉</div>
+                                <h3 class="card-title h4 fw-bold">Tercer Lugar</h3>
+                                <p class="card-text text-secondary">Medalla de bronce y reconocimiento institucional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="small text-muted text-center mt-4 fst-italic">
+                    Nota: Los premios constituyen datos demostrativos para la evaluación académica.
+                </p>
+            </div>
+        </section>
+
+        <!-- AUSPICIANTES -->
+        <section id="auspiciantes" class="py-5 bg-white border-top border-bottom">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6 text-dark">Auspiciantes Simulados</h2>
+                    <p class="text-secondary">Marcas aliadas ficticias del caso de estudio académico.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center py-4">
+                            <div class="card-body">
+                                <div class="display-5 mb-2">🕹️</div>
+                                <h3 class="card-title h5 fw-bold">PixelZone</h3>
+                                <p class="card-text text-secondary small mb-0">Hardware & Periféricos (Simulado)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center py-4">
+                            <div class="card-body">
+                                <div class="display-5 mb-2">💻</div>
+                                <h3 class="card-title h5 fw-bold">NextLevel Tech</h3>
+                                <p class="card-text text-secondary small mb-0">Sistemas de Cómputo (Simulado)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-custom h-100 text-center py-4">
+                            <div class="card-body">
+                                <div class="display-5 mb-2">🎧</div>
+                                <h3 class="card-title h5 fw-bold">ControlPlay</h3>
+                                <p class="card-text text-secondary small mb-0">Audio & Accesorios (Simulado)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAPA Y UBICACIÓN -->
+        <section id="ubicacion" class="py-5">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6 text-dark">Ubicación del Evento</h2>
+                    <p class="text-secondary">Campus Belisario Quevedo de la Universidad de las Fuerzas Armadas ESPE</p>
+                </div>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-5">
+                        <div class="card card-custom h-100 p-3">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mb-3">📍 ¿Cómo llegar?</h3>
+                                <p class="card-text text-secondary mb-4">
+                                    El torneo se llevará a cabo de forma presencial en las instalaciones del Campus Belisario Quevedo (Latacunga - Cotopaxi).
+                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Universidad+de+las+Fuerzas+Armadas+ESPE+Belisario+Quevedo"
+                                    target="_blank" rel="noopener" class="btn btn-outline-secondary rounded-pill w-100">
+                                    Abrir en Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm border">
+                            <iframe title="Mapa Campus ESPE Belisario Quevedo"
+                                src="https://www.google.com/maps?q=Universidad%20de%20las%20Fuerzas%20Armadas%20ESPE+Belisario+Quevedo&output=embed"
+                                style="border:0;" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE INSCRIPCIÓN -->
+        <section id="inscripcion" class="py-5 bg-white border-top">
+            <div class="container py-lg-3">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold display-6 text-dark">Inscripción</h2>
+                    <p class="text-secondary">Formulario demostrativo del caso de estudio.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="card card-custom shadow-sm p-3 p-md-4">
+                            <div class="card-body">
+
+                                <form onsubmit="alert('¡Inscripción de demostración enviada con éxito! (Modo simulación)'); return false;">
+                                    <div class="row g-3">
+                                        <!-- Nombre completo -->
+                                        <div class="col-12 col-md-6">
+                                            <label for="nombre" class="form-label fw-semibold">Nombre Completo</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+                                        </div>
+
+                                        <!-- Correo Institucional -->
+                                        <div class="col-12 col-md-6">
+                                            <label for="correo" class="form-label fw-semibold">Correo Institucional</label>
+                                            <input type="email" class="form-control" id="correo" placeholder="correo@espe.edu.ec" 
+                                                   pattern="[a-zA-Z0-9._%+-]+@espe\.edu\.ec" 
+                                                   title="Debe ser un correo institucional válido de la ESPE (@espe.edu.ec)" required>
+                                        </div>
+
+                                        <!-- Gamertag / Apodo -->
+                                        <div class="col-12 col-md-6">
+                                            <label for="gamertag" class="form-label fw-semibold">Gamertag / Apodo</label>
+                                            <input type="text" class="form-control" id="gamertag" placeholder="Tu alias de jugador" required>
+                                        </div>
+
+                                        <!-- Categoría a participar -->
+                                        <div class="col-12 col-md-6">
+                                            <label for="categoriaSelect" class="form-label fw-semibold">Categoría</label>
+                                            <select class="form-select" id="categoriaSelect" required>
+                                                <option value="" selected disabled>Elige una categoría</option>
+                                                <option value="fut">Fútbol Virtual</option>
+                                                <option value="freefire">Free Fire</option>
+                                                <option value="fortnite">Fortnite</option>
+                                                <option value="dbz">DBZ Budokai Tenkaichi 3</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <p class="small text-secondary mb-0">
+                                                Esta versión es un prototipo base maquetado con Bootstrap listo para el examen (Sin backend ni persistencia de datos).
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12 mt-3">
+                                            <button type="submit" class="btn btn-pastel w-100 py-2 shadow-sm">
+                                                Inscribirme ahora
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-center text-md-start">
+                <div>
+                    <p class="mb-1 fw-bold">GAMER FEST ESPE 2027</p>
+                    <p class="mb-0 small" style="color: #9d174d;">Caso de estudio académico ficticio — Universidad de las Fuerzas Armadas ESPE.</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                    <a class="text-decoration-none small" style="color: #9d174d;" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                    <a class="text-decoration-none small" style="color: #9d174d;" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                    <a class="text-decoration-none small" style="color: #9d174d;" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle Local -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
